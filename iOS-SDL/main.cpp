@@ -5,6 +5,7 @@
  */
 
 #include "SDL.h"
+#include "SDL_timer.h"
 #include <time.h>
 
 #define SCREEN_WIDTH 320

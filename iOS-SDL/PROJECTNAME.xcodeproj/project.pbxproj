@@ -11,7 +11,7 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
-		73605B4E1E7E97DD008ACDF9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 73605B4D1E7E97DD008ACDF9 /* main.c */; };
+		73605B4E1E7E97DD008ACDF9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73605B4D1E7E97DD008ACDF9 /* main.cpp */; };
 		73D7F28E1E7E926C00F03C52 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7F28D1E7E926C00F03C52 /* AVFoundation.framework */; };
 		73D7F2901E7E939800F03C52 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7F28F1E7E939800F03C52 /* libSDL2.a */; };
 		945C4F53195AF17F00DBBF61 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 945C4F52195AF17F00DBBF61 /* Default-568h@2x.png */; };
@@ -30,7 +30,7 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28FD14FF0DC6FC520079059D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		28FD15070DC6FC5B0079059D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		73605B4D1E7E97DD008ACDF9 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		73605B4D1E7E97DD008ACDF9 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		73D7F2801E7E8DE900F03C52 /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = "../../Library/Developer/Xcode/DerivedData/SDL-cropglvaiqrcimemntkfrpsjrpkj/Build/Products/Debug-iphonesimulator/libSDL2.a"; sourceTree = "<group>"; };
 		73D7F28D1E7E926C00F03C52 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		73D7F28F1E7E939800F03C52 /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSDL2.a; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		29B97315FDCFA39411CA2CEA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				73605B4D1E7E97DD008ACDF9 /* main.c */,
+				73605B4D1E7E97DD008ACDF9 /* main.cpp */,
 				73D7F28F1E7E939800F03C52 /* libSDL2.a */,
 			);
 			name = Sources;
@@ -194,7 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73605B4E1E7E97DD008ACDF9 /* main.c in Sources */,
+				73605B4E1E7E97DD008ACDF9 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +205,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = BBMD5EQBE2;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -226,6 +228,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = BBMD5EQBE2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
