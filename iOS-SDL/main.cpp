@@ -63,7 +63,7 @@ main(int argc, char *argv[])
     }
 
     /* seed random number generator */
-    srand(time(NULL));
+    srand((uint)time(NULL));
 
     /* create window and renderer */
     window =
